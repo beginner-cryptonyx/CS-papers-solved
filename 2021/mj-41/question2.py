@@ -22,9 +22,9 @@ else:
 # c
 def bubbleSort():
     temp:int
-    for x in range(0, 9): 
+    for x in range(0, 9): # should be 10
         for y in range(0,9-x):
-            if arrayData[y] > arrayData[y+1]:
+            if arrayData[y] > arrayData[y+1]: # wrong direction
                 temp = arrayData[y]
                 arrayData[y] = arrayData[y+1]
                 arrayData[y+1] = temp

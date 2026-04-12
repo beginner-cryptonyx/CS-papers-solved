@@ -22,7 +22,7 @@ class TreasureChest():
     def getPoints(self, attempt_count:int) -> int:
         if attempt_count > 4 or attempt_count < 1:
             return 0
-        return self.__points//attempt_count
+        return self.__points//attempt_count #this is bad logic, for 3 and 4 attempts it should be divided by 4, stick to if statements and de prioritize writing "slick code"
     
 
 # b
